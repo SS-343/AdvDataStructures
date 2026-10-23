@@ -24,7 +24,12 @@ network_environment = {
     "admin_workstation": ["domain_controller"]
 }
 
-
+malware_profiles = {
+    "ransomware": {
+        "spread": 0.85,
+        "contain": 0.15
+    }
+}
 
 
 
