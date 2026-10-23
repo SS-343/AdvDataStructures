@@ -20,8 +20,9 @@ Actions on Objectives – exfiltration, ransomware, data destruction.
 #User Workstation -> Admin Workstation -> Domain Controller
 network_environment = {
     "user_account":['user_workstation', 'user_email'],
-    "user_workstation": ['admin_workstation'],
-    "admin_workstation": ["domain_controller"]
+    "user_workstation": ['user_network'],
+    "user_network": ['file_server', 'workstation_with_admin'],
+    "workstation_with_admin": ["domain_controller"]
 }
 
 malware_profiles = {
